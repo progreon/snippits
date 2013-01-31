@@ -1,0 +1,7 @@
+template <typename T>
+
+void tellen_multiset(const multiset<T> ms, map<T, int> &m){
+    for (multiset<T>::iterator it = ms.begin(); it != ms.end(); it++){
+        m[*it]++;
+    }
+}
