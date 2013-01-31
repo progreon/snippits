@@ -4,7 +4,7 @@ using namespace std;
 
 void zoek(const char* p, char* *&q, char* *r, char* *s){
     q = r;
-	while (q != s || strcmp(p, q[0]) != 0){
+	while (q != s && strcmp(p, q[0]) != 0){
 		q++;
 	}
 }
