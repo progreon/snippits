@@ -8,3 +8,16 @@ void zoek(const char* p, char* *&q, char* *r, char* *s){
 		q++;
 	}
 }
+
+//testje
+
+int main(){
+	char* cht[] = {"hey", "hi", "hello", "cya", "bye"};
+	char* p = "hello";
+	char* *q;
+	zoek(p, q, &cht[1], &cht[4]);
+	
+	cout << *q << endl;
+	
+	return 0;
+}
